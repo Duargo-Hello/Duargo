@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body onload="checkAdmin()">
+
+    <div class="container">
+        <h2>Painel do Administrador</h2>
+        <button onclick="logout()">Sair</button>
+
+        <h3>Cadastrar Novo Usuário</h3>
+        <input type="text" id="new-name" placeholder="Nome">
+        <input type="email" id="new-email" placeholder="Email">
+        <input type="password" id="new-password" placeholder="Senha">
+        <button onclick="registerUser()">Cadastrar</button>
+
+        <h3>Lista de Usuários</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+        </table>
+    </div>
+    
+    <script src="adm.js"></script>
+
+</body>
+</html>

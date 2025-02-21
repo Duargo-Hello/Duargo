@@ -18,10 +18,19 @@
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="#">Novidades</a></li>
+            <li class="submenu">
+                <a href="#">Novidades ▼</a>
+                <ul class="dropdown">
+                    <li><a href="#">Doramas Recentes</a></li>
+                    <li><a href="#">Mais Populares</a></li>
+                    <li><a href="#">Recomendados</a></li>
+                </ul>
+            </li>
             <li><a href="#">Contato</a></li>
+            <li><a href="#" id="logout-btn">Sair</a></li> <!-- Botão de Logout -->
         </ul>
     </nav>
+    
 
 
     <div class="search-box">
@@ -96,7 +105,7 @@
     </section>
 
     <section class="resenha">
-        
+                
         <div class="add-review">
             <h3>Deixe sua avaliação</h3>
             <div class="star-rating">

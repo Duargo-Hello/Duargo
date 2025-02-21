@@ -285,3 +285,25 @@ document.querySelectorAll(".btn-jogar").forEach(button => {
         document.getElementById("videoModal").style.display = "flex";
     });
 });
+
+// função botão de sair
+document.getElementById("logout-btn").addEventListener("click", function() {
+    // Remove os dados de login do usuário (exemplo: localStorage)
+    localStorage.removeItem("userLoggedIn");
+
+    // Redireciona para a página de login
+    window.location.href = "login.html";
+});
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Simula um login bem-sucedido
+    localStorage.setItem("userLoggedIn", "true");
+
+    // Redireciona para a página principal
+    window.location.href = "index.html";
+});
+// Verifica se o usuário está logado
+if (!localStorage.getItem("userLoggedIn")) {
+    window.location.href = "login.html"; // Redireciona para login se não estiver logado
+}
