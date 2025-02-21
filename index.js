@@ -307,3 +307,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 if (!localStorage.getItem("userLoggedIn")) {
     window.location.href = "login.html"; // Redireciona para login se não estiver logado
 }
+function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("active");
+}
