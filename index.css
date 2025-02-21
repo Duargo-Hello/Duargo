@@ -216,7 +216,7 @@ footer {
     background: #ff9f00;
 }
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 2.5rem;
     }
