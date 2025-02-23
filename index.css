@@ -9,18 +9,18 @@
 
 /* Estilo do corpo */
 body {
-    background-color: #bea9ba;
+    background-image: linear-gradient(45deg, #9790ff, #ff64e5, #fffda4);
     color:white;
     text-align: center;
 }
 
 /* Cabeçalho */
 header {
-    background-image: url(imagens/text-love-dorama-message-vector-260nw-1924196510.webp);
+    background-image: url(imagens/text-love-dorama-message-vector-260nw-1924196510.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-position: center;
-    height: 200px;
+    height: 150px;
     padding: 20px;
 }
 
@@ -198,8 +198,8 @@ footer {
 }
 /* Estilizando o botão */
 .search-box button {
-    background: #f9b233;
-    border: none;
+    background: #ffec44;
+    border: 1px solid #9e6400;
     padding: 8px 12px;
     border-radius: 50%;
     cursor: pointer;
@@ -209,6 +209,7 @@ footer {
 .search-box button i {
     font-size: 18px;
     color: white;
+    text-shadow: 0 0 5px #121212;
 }
 
 /* Efeito hover no botão */
@@ -329,7 +330,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #333;
+    background: #4141416b;
     display: flex;
     justify-content: center;
 }
@@ -348,24 +349,14 @@ nav ul li a {
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #ffcc00;
-    color: #333;
-}
-
 /* Estilização do Submenu */
 .dropdown {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background: #444;
+    background: #5f5f5f;
     list-style: none;
-    padding: 0;
-    width: 180px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    z-index: 1000;
 }
 
 .dropdown li {
@@ -373,15 +364,15 @@ nav ul li a:hover {
 }
 
 .dropdown li a {
-    padding: 12px 15px;
     display: block;
     color: white;
     transition: 0.3s;
+    font-size: .8em;
 }
 
 .dropdown li a:hover {
-    background: #ffcc00;
     color: #333;
+    font-weight: 900;
 }
 
 /* Exibir o submenu quando passar o mouse */
